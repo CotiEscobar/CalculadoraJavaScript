@@ -1,0 +1,107 @@
+/*FIGURAS*/
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+} 
+body {
+    margin: 0;
+}
+main {
+    max-width: 1400px;
+}
+/*estilos del header*/
+header {
+    width: 100%;
+    height: 100px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+/*tamaño de todas las imagenes de figuras*/
+.images {
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+}
+/*estilos de las cajas para las figuras geometricas*/
+.geometric-figures-boxes {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 10px;  
+}
+.box-title {
+    display: flex;
+    align-items: center;
+}
+.box-title h2 {
+    margin: 0px;
+}
+.figure-images {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.square {
+    background-color: #ffd670;
+}
+.triangle {
+    background-color: #f5ffbe;
+}
+.circle {
+    background-color: #ffd8d1;
+}
+/*estilos para el formulario*/
+.form-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-form-box {
+    width: 80%;
+    height: 25px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.form-box p {
+    margin: 10px;
+}
+/*estilos botones*/
+.button {
+    margin-right: 10px;
+    padding: 12px 6px;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    border-width: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.buttons-circle {
+    display: flex;
+    justify-content: center;
+}
+/*diseño responsive*/
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    .section-geometric-figures-boxes {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 1279px) and (max-width: 1440px) {
+    .section-geometric-figures-boxes {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .geometric-figures-boxes {
+        width: 30%;
+        height: fit-content;
+    }
+}

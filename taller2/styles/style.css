@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+} 
+body {
+    margin: 0;
+}
+main {
+    max-width: 1400px;
+}
+/*estilos del header y su imagen*/
+.header-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.images {
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+}
+/*estilos del titulo e imagen*/
+.box-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.box-title h2 {
+    margin: 0px;
+}
+.figure-images {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+/*estilos de la seccion formulario*/
+.section-prices-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.discount-container {
+    background-color: #cbebb3;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+.discount-form-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.coupon-list {
+    height: fit-content;
+    background-color: #f5ffbe;
+    border-radius: 10px;
+    padding: 30px;
+}
+/*estilos del formulario*/
+.input-form {
+    height: 25px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: #cbebb3;
+}
+.label-form {
+    margin: 5px;
+}
+/*estilos de los botones*/
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn-container p {
+    margin: 10px;
+}
+.button {
+    margin-right: 10px;
+    padding: 12px 6px;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    border-width: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.button.price {
+    margin-top: 10px;
+}
+/*diseño responsive*/
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+   .section-prices-container{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       width: 70%;
+   }
+}
+@media screen and (min-width: 1279px) and (max-width: 1440px) {
+    .section-prices-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70%;
+    }
+    .discount-container {
+        width: 40%;
+    }
+}
